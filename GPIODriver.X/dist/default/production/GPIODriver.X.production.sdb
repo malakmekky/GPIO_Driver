@@ -1,0 +1,117 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"7 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\gpio.c
+[e E1331 . `uc
+PIN 0
+PIN1 1
+PIN2 2
+PIN3 3
+PIN4 4
+PIN5 5
+PIN6 6
+PIN7 7
+]
+[e E1345 . `uc
+EPORTA 0
+EPORTB 1
+EPORTC 2
+EPORTD 3
+EPORTE 4
+]
+[e E1327 . `uc
+OUT 0
+IN 1
+]
+"15
+[e E1341 . `uc
+LOW 0
+HIGH 1
+]
+"28 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\main.c
+[e E1331 . `uc
+PIN 0
+PIN1 1
+PIN2 2
+PIN3 3
+PIN4 4
+PIN5 5
+PIN6 6
+PIN7 7
+]
+[e E1345 . `uc
+EPORTA 0
+EPORTB 1
+EPORTC 2
+EPORTD 3
+EPORTE 4
+]
+[e E1327 . `uc
+OUT 0
+IN 1
+]
+"32
+[e E1341 . `uc
+LOW 0
+HIGH 1
+]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"7 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\gpio.c
+[v _setPinDir setPinDir `(v  1 e 1 0 ]
+"15
+[v _setPinLevel setPinLevel `(v  1 e 1 0 ]
+"23
+[v _getBit getBit `(i  1 e 2 0 ]
+"18 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\main.c
+[v _delayMS delayMS `(v  1 e 1 0 ]
+"27
+[v _main main `(v  1 e 1 0 ]
+[v _main main `(v  1 e 1 0 ]
+{
+"37
+} 0
+"15 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\gpio.c
+[v _setPinLevel setPinLevel `(v  1 e 1 0 ]
+{
+[v setPinLevel@pin pin `E1331  1 p 1 wreg ]
+[v setPinLevel@pin pin `E1331  1 p 1 wreg ]
+[v setPinLevel@port port `E1345  1 p 1 0 ]
+[v setPinLevel@level level `E1341  1 p 1 1 ]
+[v setPinLevel@pin pin `E1331  1 p 1 5 ]
+"22
+} 0
+"7
+[v _setPinDir setPinDir `(v  1 e 1 0 ]
+{
+[v setPinDir@pin pin `E1331  1 p 1 wreg ]
+[v setPinDir@pin pin `E1331  1 p 1 wreg ]
+[v setPinDir@port port `E1345  1 p 1 0 ]
+[v setPinDir@dir dir `E1327  1 p 1 1 ]
+[v setPinDir@pin pin `E1331  1 p 1 5 ]
+"14
+} 0
+"23
+[v _getBit getBit `(i  1 e 2 0 ]
+{
+[v getBit@port port `E1345  1 p 1 0 ]
+"28
+} 0
+"18 C:\Users\mkmek\MPLABXProjects\GPIODriver.X\main.c
+[v _delayMS delayMS `(v  1 e 1 0 ]
+{
+"19
+[v delayMS@j j `i  1 a 2 5 ]
+[v delayMS@i i `i  1 a 2 3 ]
+"18
+[v delayMS@M M `i  1 p 2 0 ]
+"25
+} 0
